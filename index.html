@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JS Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
   </head>
   <body onload="fetchIssues()">
     <div class="container">
-      <h1>JS IssueTracker <small>by Saeem Osman</small></h1>
+      <h1 id="center">JS IssueTracker <small>by Saeem Osman</small></h1>
       <div class="jumbotron">
         <h3>Add new Issue:</h3>
-        <form id="issueInputform">
+        <form id="issueInputForm">
           <div class="form-group">
             <label for="issueDescInput">Descrioption</label>
             <input
@@ -28,12 +34,6 @@
               <option value="Medium">Medium</option>
               <option value="High">High</option>
             </select>
-            <input
-              type="text"
-              class="form-control"
-              id="issueDescInput"
-              placeholder="Describe the Issue"
-            />
           </div>
           <div class="form-group">
             <label for="issueAssignedToInput">Assigned To</label>
